@@ -1,0 +1,13 @@
+<?php
+$files = glob(__DIR__ . '/Functions/*.php');
+
+if ($files === false) {
+    throw new RuntimeException("Failed to find function files");
+}
+
+foreach ($files as $file) {
+    require_once $file;
+}
+
+unset($file);
+unset($files);
