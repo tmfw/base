@@ -3,7 +3,7 @@
 namespace TMFW\Providers;
 
 
-class TMFWServiceProvider extends ServiceProvider
+class TmfwServiceProvider extends ServiceProvider
 {
 
     protected $bootstrapers = ['Support', 'Foundation'/*, 'Workflow', 'Exporter', 'Jobs', 'Template', 'Plugin\Localizer'*/];
