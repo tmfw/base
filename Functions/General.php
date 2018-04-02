@@ -22,16 +22,3 @@ if (!function_exists('sys')) {
     }
 }
 
-if (!function_exists('ui_asset')) {
-
-    /**
-     * Get builtin template asset path
-     *
-     * @param $path
-     * @return mixed|string
-     */
-    function ui_asset($path, $secure = null){
-        return sys('url')->route('builtin.template.assets', ['path' => trim($path, '/')]);
-    }
-}
-

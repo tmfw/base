@@ -6,13 +6,7 @@ namespace TMFW\Providers;
 class TmfwServiceProvider extends ServiceProvider
 {
 
-    protected $bootstrapers = ['Support', 'Foundation'/*, 'Workflow', 'Exporter', 'Jobs', 'Template', 'Plugin\Localizer'*/];
-
-    /*public function boot(){
-        if(is_dir($layouts = __DIR__.'/../../template/src/layout')){
-            $this->loadViewsFrom($layouts, 'layout');
-        }
-    }*/
+    protected $bootstrapers = ['Support', 'Foundation', 'Template', /*, 'Workflow', 'Exporter', 'Jobs', 'Plugin\Localizer'*/];
 
     /**
      * Register service provider
